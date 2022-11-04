@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<title>Endekrypter: PolyUkra</title>
+		<script src="scripts/polyukraService.js" charset="UTF-8"></script>
+		<script src="scripts/polyukraKoder.js" charset="UTF-8"></script>
+		<script src="scripts/polyukraDekoder.js" charset="UTF-8"></script>
+		<link rel="stylesheet" href="styles/poly.css"></link>
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+	</head>
+	<body>
+	<div id="all">
+		<div id="content">
+			<div id="part1">
+				<div id="errorSpace1">
+					<div id="lamp1-1"><button id="lamp1" class="lamp" disabled></button></div>
+					<div id="errScreen1"><textarea id="inErrScreen1" class="errorScreen" rows="1" cols="3" readonly></textarea></div>
+					<div style="clear:both;"></div>
+					<div id=errCnc1><button class="errCnc" onclick="funErrorCnc(1)"><img src="images/connector_off.png" id="errCnc1_img"></button></div>
+				</div>
+				<div id="screen1">
+					<textarea id="inCleartext" placeholder="tekst" rows="5" cols="30"></textarea>
+				</div>
+				<div id="resize1">
+					<div id="resize1-1"><button class="buttonResize" onclick="funResize('inCleartext')">&udarr;</button></div>
+					<div id="resize1-2"><button class="buttonResize" onclick="funReduce('inCleartext')">&uarr;</button></div>
+					<div id="resize1-3"><button class="buttonResize" onclick="funSpread('inCleartext')">&darr;</button></div>
+				</div>
+			</div><div style="clear:both;"></div>
+			<div id="config">
+				<div id=config1-1><button id="btnConfCUp" class="buttonConfig" onclick="funReset(1)"><i class="far fa-trash-alt"></i>&uarr;</button></div>
+				<div id=config1-2><button id="btnConfCDown" class="buttonConfig" onclick="funReset(2)"><i class="far fa-trash-alt"></i>&darr;</button></div>
+				<div id=config2-1><button id="btnConfCopyUp" class="buttonConfig" onclick="funCopy(1)"><i class="far fa-copy"></i>&uarr;</button></div>
+				<div id=config2-2><button id="btnConfCopyDown" class="buttonConfig" onclick="funCopy(2)"><i class="far fa-copy"></i>&darr;</button></div>
+				<div id=config3-1><button id="btnConfPasteUp" class="buttonConfig" onclick="funSelect(1)"><i class="fas fa-crosshairs"></i>&uarr;</button></div>
+				<div id=config3-2><button id="btnConfPasteDown" class="buttonConfig" onclick="funSelect(2)"><i class="fas fa-crosshairs"></i>&darr;</button></div>
+				<div id=config4-1><button id="btnConfCrypto" class="buttonConfig" onclick="funEnde()">CRYPT</button></div>
+			</div><div style="clear:both;"></div>
+			<div id="part2">
+				<div id="errorSpace2">
+					<div id="lamp2-1"><button id="lamp2" class="lamp" disabled></button></div>
+					<div id="errScreen2"><textarea id="inErrScreen2" class="errorScreen" rows="1" cols="3" readonly></textarea></div>
+					<div style="clear:both;"></div>
+					<div id=errCnc2><button class="errCnc" onclick="funErrorCnc(2)"><img src="images/connector_off.png" id="errCnc2_img"></button></div>
+				</div>
+				<div id="screen2">
+					<textarea id="inCipher" placeholder="szyfr" rows="5" cols="30"></textarea>
+				</div>
+				<div id="resize2">
+					<div id="resize2-1"><button class="buttonResize" onclick="funResize('inCipher')">&udarr;</button></div>
+					<div id="resize2-2"><button class="buttonResize" onclick="funReduce('inCipher')">&uarr;</button></div>
+					<div id="resize2-3"><button class="buttonResize" onclick="funSpread('inCipher')">&darr;</button></div>
+				</div><div style="clear:both;"></div>
+			</div>
+		</div>
+		<div id="system">
+			<div><button id="connector" onclick="funMainConnector()"><img src="images/connector_off.png" id="connector_img"></button></div>
+			<div><button id="selector" onclick="funSelector()"><img src="images/selector_down.png" class="active" id="selector_img"></button></div>
+		</div><div style="clear:both;"></div>
+	</div>
+	</body>
+</html>

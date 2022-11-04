@@ -1,0 +1,65 @@
+body
+{
+    background-color: #000000;
+    font-size: 20px;
+    color: rgb(12, 194, 6);
+    font-family: Consolas;
+    text-align: center;
+	word-wrap: break-word;
+}
+#content
+{
+    width: 920px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Consolas;
+    border:rgb(21, 119, 12);
+}
+    #nav
+    {
+        width: 500px;
+        height: 344px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+        #navTop
+        {
+            margin-top: 10px;
+            margin-left: 4px;
+            letter-spacing: 5px;
+        }
+        #navLeft
+        {
+            float:left;
+            height: 300px;
+            width: 20px;
+        }
+        #navMenu
+        {
+            float: left;
+            width: 460px;
+        }
+            .navButton
+            {
+                height: 70px;
+                width: 400px;
+                margin-top: 23px;
+                font-size: 20px;
+                font-family: Consolas;
+                text-align: center;
+                background-color: black;
+                color: orange;
+                border-color: gray;
+            }
+        #navRight
+        {
+            float: left;
+            height: 300px;
+            width: 20px;
+        }
+        #navBottom
+        {
+			margin-left: 4px;
+            letter-spacing: 5px;
+        }
