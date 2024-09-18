@@ -3,10 +3,9 @@ Wersja 2.0.0 jest nie kompatybilna ze starszymi wersjami Endekryptera
 === LOGISTYCZNE ===
 Dodanie głównej strony programu: endekrypter.html
 Osadzenie plików trioarite w osobnym folderze
-Zmiana nazwy pliku CoNowego.txt na README.txt
 
 === SYSTEMOWE ===
-Dodanie przycisku automatycznie dopasowywującego wysokość ekranu do jego zawartości (przez dodanie lub odjęcie wierszy ekranu)
+Dodanie przycisku automatycznie dopasowywującego wysokość pola ekranu do jego zawartości (przez dodanie lub odjęcie wierszy ekranu)
 Dodanie przycisku dodającego i przycisku odejmującego wiersze ekranu
 Zmiana szerokości stron do 920px (połowa okna przeglądarki Chrome na ekranie 1920x1080)
 
